@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <ImageView fitHeight="156.0" fitWidth="200.0" layoutX="26.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="myhero" fitHeight="50.0" fitWidth="40.0" layoutX="86.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="254.0" layoutY="265.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chest1" fitHeight="35.0" fitWidth="55.0" layoutX="287.0" layoutY="281.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="455.0" layoutY="216.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="664.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenorc1" fitHeight="50.0" fitWidth="40.0" layoutX="814.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tnt1" fitHeight="42.0" fitWidth="47.0" layoutX="528.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="121.0" layoutX="440.0" layoutY="482.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Weapons.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="403.0" layoutY="67.0" opacity="0.0">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/gameoverbutton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
