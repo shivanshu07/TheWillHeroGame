@@ -1,15 +1,27 @@
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controller implements Initializable{
+	
+	private Stage stage;
+	private Scene scene;
+	private Parent root;
 	
 	@FXML
 	private ImageView myhero;
@@ -52,14 +64,23 @@ public class Controller implements Initializable{
 		translate2.play();
 		
 	}
-	/*
-	public void playgame(TouchEvent e)
+	
+	public void playtouch()
 	{
 		playbutton.setOpacity(0);
 		loadbutton.setOpacity(1);
 		exitbutton.setOpacity(0);
 		newgamebutton.setOpacity(1);
 		titlebutton.setOpacity(0);
-	}*/
+	}
+	
+	public void playnew(MouseEvent event) throws IOException
+	{
+		root = FXMLLoader.load(getClass().getResource("gamescene.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root, Color.CYAN);
+		stage.setScene(scene);
+		stage.show();
+	}
 
 }
