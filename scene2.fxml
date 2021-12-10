@@ -46,7 +46,7 @@
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Will-Hero-title.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="playbutton" fitHeight="138.0" fitWidth="200.0" layoutX="600.0" layoutY="40.0">
+      <ImageView fx:id="playbutton" fitHeight="138.0" fitWidth="200.0" layoutX="600.0" layoutY="40.0" onMousePressed="#playtouch">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/vector-illustration-pixel-play-button-260nw-472907242.jpg" />
          </image>
@@ -61,7 +61,7 @@
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/loadimage.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="newgamebutton" fitHeight="50.0" fitWidth="200.0" layoutX="400.0" layoutY="131.0" opacity="0.0">
+      <ImageView fx:id="newgamebutton" fitHeight="50.0" fitWidth="200.0" layoutX="400.0" layoutY="131.0" onMousePressed="#playnew" opacity="0.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/new-game-button.png" />
          </image>
