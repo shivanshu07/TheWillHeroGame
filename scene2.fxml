@@ -16,27 +16,27 @@
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="254.0" layoutY="265.0">
+      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="455.0" layoutY="216.0">
+      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="488.0" layoutY="225.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="664.0" layoutY="292.0">
+      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="745.0" layoutY="292.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="55.0" layoutX="287.0" layoutY="281.0">
+      <ImageView fitHeight="35.0" fitWidth="55.0" layoutX="297.0" layoutY="258.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="bossorc" fitHeight="79.0" fitWidth="83.0" layoutX="732.0" layoutY="216.0">
+      <ImageView fx:id="bossorc" fitHeight="79.0" fitWidth="83.0" layoutX="794.0" layoutY="213.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/bossimage.jpeg" />
          </image>
