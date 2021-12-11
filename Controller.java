@@ -78,9 +78,10 @@ public class Controller implements Initializable{
 	{
 		root = FXMLLoader.load(getClass().getResource("gamescene.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root, Color.CYAN);
+		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+		
 	}
 
 }
