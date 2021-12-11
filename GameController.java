@@ -4,12 +4,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
 public class GameController implements Initializable{
+	
 	@FXML
 	private ImageView myhero;
 	
@@ -23,8 +26,9 @@ public class GameController implements Initializable{
 	private ImageView chest1;
 	
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) 
+	public void initialize(URL arg0, ResourceBundle arg1)
 	{
+
 		TranslateTransition translate = new TranslateTransition();
 		translate.setNode(myhero);
 		translate.setDuration(Duration.millis(500));
@@ -42,4 +46,11 @@ public class GameController implements Initializable{
 		translate2.play();
 		
 	}
+	
+	public void movhero(MouseEvent e)
+	{
+		double x = myhero.getLayoutX();
+		myhero.setLayoutX(x+=60);
+	}
+	
 }
