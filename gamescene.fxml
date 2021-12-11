@@ -17,22 +17,22 @@
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="254.0" layoutY="265.0">
+      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="chest1" fitHeight="35.0" fitWidth="55.0" layoutX="287.0" layoutY="281.0">
+      <ImageView fx:id="chest1" fitHeight="35.0" fitWidth="55.0" layoutX="297.0" layoutY="258.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="455.0" layoutY="216.0">
+      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="488.0" layoutY="225.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="664.0" layoutY="292.0">
+      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="745.0" layoutY="292.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
          </image>
@@ -42,21 +42,31 @@
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="tnt1" fitHeight="42.0" fitWidth="47.0" layoutX="528.0" layoutY="242.0">
+      <ImageView fx:id="tnt1" fitHeight="35.0" fitWidth="40.0" layoutX="527.0" layoutY="258.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="50.0" fitWidth="121.0" layoutX="440.0" layoutY="482.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Weapons.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="403.0" layoutY="67.0" opacity="0.0">
+      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="581.0" layoutY="59.0" opacity="0.0">
          <image>
             <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/gameoverbutton.png" />
          </image>
       </ImageView>
       <Label layoutX="793.0" layoutY="50.0" />
+      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="433.0" layoutY="486.0" opacity="0.5">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="500.0" layoutY="486.0" opacity="0.5">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="86.0" layoutX="900.0" layoutY="135.0" onMousePressed="#movhero">
+         <image>
+            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/play-button.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
