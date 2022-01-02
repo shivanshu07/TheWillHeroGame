@@ -4,68 +4,258 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
    <children>
-      <ImageView fitHeight="156.0" fitWidth="200.0" layoutX="26.0" layoutY="292.0">
+      <ImageView fx:id="greenorc1" fitHeight="38.0" fitWidth="40.0" layoutX="814.0" layoutY="254.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="myhero" fitHeight="50.0" fitWidth="40.0" layoutX="86.0" layoutY="242.0">
+      <ImageView fx:id="gameoverbutton" fitHeight="169.0" fitWidth="299.0" layoutX="338.0" layoutY="50.0" opacity="0.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/gameoverbutton.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="chest1" fitHeight="35.0" fitWidth="55.0" layoutX="297.0" layoutY="258.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="488.0" layoutY="225.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="745.0" layoutY="292.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="greenorc1" fitHeight="50.0" fitWidth="40.0" layoutX="814.0" layoutY="242.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="tnt1" fitHeight="35.0" fitWidth="40.0" layoutX="527.0" layoutY="258.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="581.0" layoutY="59.0" opacity="0.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/gameoverbutton.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="793.0" layoutY="50.0" />
       <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="433.0" layoutY="486.0" opacity="0.5">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon1.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon1.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="500.0" layoutY="486.0" opacity="0.5">
+      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="500.0" layoutY="486.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon2.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/weapon2.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="87.0" fitWidth="86.0" layoutX="900.0" layoutY="135.0" onMousePressed="#movhero">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/play-button.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/play-button.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="myhero" fitHeight="50.0" fitWidth="40.0" layoutX="86.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land1" fitHeight="156.0" fitWidth="200.0" layoutX="26.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land2" fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land3" fitHeight="200.0" fitWidth="187.0" layoutX="488.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land4" fitHeight="143.0" fitWidth="200.0" layoutX="774.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chest1" fitHeight="87.0" fitWidth="66.0" layoutX="536.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land5" fitHeight="193.0" fitWidth="181.0" layoutX="1005.0" layoutY="228.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tnt1" fitHeight="64.0" fitWidth="40.0" layoutX="1417.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land6" fitHeight="156.0" fitWidth="200.0" layoutX="1317.0" layoutY="294.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land7" fitHeight="200.0" fitWidth="187.0" layoutX="1638.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land8" fitHeight="143.0" fitWidth="200.0" layoutX="1924.0" layoutY="291.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land9" fitHeight="148.0" fitWidth="149.0" layoutX="2194.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land11" fitHeight="200.0" fitWidth="187.0" layoutX="2715.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land10" fitHeight="156.0" fitWidth="200.0" layoutX="2428.0" layoutY="291.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land17" fitHeight="143.0" fitWidth="200.0" layoutX="4256.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land15" fitHeight="143.0" fitWidth="200.0" layoutX="3794.0" layoutY="291.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land12" fitHeight="143.0" fitWidth="200.0" layoutX="2997.0" layoutY="291.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land13" fitHeight="156.0" fitWidth="200.0" layoutX="3287.0" layoutY="291.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land14" fitHeight="148.0" fitWidth="149.0" layoutX="3573.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land16" fitHeight="148.0" fitWidth="149.0" layoutX="4049.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land18" fitHeight="156.0" fitWidth="200.0" layoutX="4537.0" layoutY="294.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land20" fitHeight="156.0" fitWidth="200.0" layoutX="5078.0" layoutY="294.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land19" fitHeight="200.0" fitWidth="187.0" layoutX="4809.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land21" fitHeight="200.0" fitWidth="187.0" layoutX="5400.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land23" fitHeight="156.0" fitWidth="236.0" layoutX="5873.0" layoutY="294.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land22" fitHeight="148.0" fitWidth="149.0" layoutX="5672.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="land24" fitHeight="148.0" fitWidth="149.0" layoutX="6149.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redorc1" fitHeight="38.0" fitWidth="40.0" layoutX="1680.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redorc3" fitHeight="38.0" fitWidth="40.0" layoutX="3347.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redorc2" fitHeight="38.0" fitWidth="40.0" layoutX="2488.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenorc2" fitHeight="38.0" fitWidth="40.0" layoutX="2004.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redorc4" fitHeight="38.0" fitWidth="40.0" layoutX="4663.0" layoutY="256.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenorc3" fitHeight="38.0" fitWidth="40.0" layoutX="4092.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenorc4" fitHeight="38.0" fitWidth="40.0" layoutX="4617.0" layoutY="256.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tnt2" fitHeight="64.0" fitWidth="40.0" layoutX="2789.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tnt3" fitHeight="64.0" fitWidth="40.0" layoutX="3882.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenorc5" fitHeight="38.0" fitWidth="40.0" layoutX="5454.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chest2" fitHeight="87.0" fitWidth="66.0" layoutX="3077.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tnt4" fitHeight="64.0" fitWidth="40.0" layoutX="5158.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/tntimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redorc5" fitHeight="38.0" fitWidth="40.0" layoutX="5701.0" layoutY="254.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/orc3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bossorc" fitHeight="79.0" fitWidth="83.0" layoutX="6000.0" layoutY="216.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/bossimage.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chest3" fitHeight="87.0" fitWidth="66.0" layoutX="4335.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" alignment="CENTER" layoutX="854.0" layoutY="14.0" prefHeight="79.0" prefWidth="125.0" text="Label" textFill="#7fc94b">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="coin" layoutX="86.0" layoutY="14.0" prefHeight="71.0" prefWidth="126.0" text="Label" textFill="#6886f4">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="26.0" layoutY="25.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Coin.png" />
          </image>
       </ImageView>
    </children>
