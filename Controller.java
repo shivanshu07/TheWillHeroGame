@@ -1,6 +1,5 @@
 package application;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -74,13 +73,18 @@ public class Controller implements Initializable{
 		titlebutton.setOpacity(0);
 	}
 	
-	public void playnew(MouseEvent event) throws IOException
+	public void playnew(MouseEvent event) throws Exception
 	{
+		try {
 		root = FXMLLoader.load(getClass().getResource("gamescene.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 
