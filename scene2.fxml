@@ -6,64 +6,64 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <ImageView fitHeight="156.0" fitWidth="200.0" layoutX="26.0" layoutY="292.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="myhero" fitHeight="50.0" fitWidth="40.0" layoutX="86.0" layoutY="242.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="488.0" layoutY="225.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="241.0" layoutX="745.0" layoutY="292.0">
-         <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.jpg" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="35.0" fitWidth="55.0" layoutX="297.0" layoutY="258.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/chestimage.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="bossorc" fitHeight="79.0" fitWidth="83.0" layoutX="794.0" layoutY="213.0">
+      <ImageView fx:id="bossorc" fitHeight="79.0" fitWidth="83.0" layoutX="794.0" layoutY="219.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/bossimage.jpeg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/bossimage.jpeg" />
          </image>
       </ImageView>
       <ImageView fx:id="titlebutton" fitHeight="208.0" fitWidth="317.0" layoutX="138.0" layoutY="27.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Will-Hero-title.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/Will-Hero-title.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="playbutton" fitHeight="138.0" fitWidth="200.0" layoutX="600.0" layoutY="40.0" onMousePressed="#playtouch">
+      <ImageView fx:id="playbutton" fitHeight="50.0" fitWidth="161.0" layoutX="633.0" layoutY="88.0" onMousePressed="#playtouch">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/vector-illustration-pixel-play-button-260nw-472907242.jpg" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/vector-illustration-pixel-play-button-260nw-472907242.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="exitbutton" fitHeight="43.0" fitWidth="124.0" layoutX="815.0" layoutY="88.0">
+      <ImageView fx:id="exitbutton" fitHeight="43.0" fitWidth="124.0" layoutX="815.0" layoutY="92.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/exitbutton.png" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/exitbutton.png" />
          </image>
       </ImageView>
       <ImageView fx:id="loadbutton" fitHeight="50.0" fitWidth="168.0" layoutX="416.0" layoutY="59.0" opacity="0.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/loadimage.png" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/loadimage.png" />
          </image>
       </ImageView>
       <ImageView fx:id="newgamebutton" fitHeight="50.0" fitWidth="200.0" layoutX="400.0" layoutY="131.0" onMousePressed="#playnew" opacity="0.0">
          <image>
-            <Image url="@../../../../Dropbox/My%20PC%20(LAPTOP-2R30LAFS)/Downloads/new-game-button.png" />
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/new-game-button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="myhero" fitHeight="50.0" fitWidth="40.0" layoutX="86.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/avatar4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="156.0" fitWidth="200.0" layoutX="26.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="278.0" layoutY="242.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="193.0" layoutX="488.0" layoutY="225.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="200.0" layoutX="745.0" layoutY="292.0">
+         <image>
+            <Image url="@../../../../My%20PC%20(LAPTOP-2R30LAFS)/Downloads/island1.png" />
          </image>
       </ImageView>
    </children>
